@@ -1,0 +1,14 @@
+*.class
+db.properties
+
+.idea/
+target/
+out/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml
+*.iws
+*.zip
