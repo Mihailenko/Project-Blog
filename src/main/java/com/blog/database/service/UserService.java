@@ -14,6 +14,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class UserService {
+
     private final UserRepository userRepository;
 
     public User findOne(final Long userId) {
