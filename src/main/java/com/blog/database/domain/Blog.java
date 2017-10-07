@@ -1,6 +1,9 @@
 package com.blog.database.domain;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -18,20 +21,8 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
     private Long id;
-
     @Column(nullable = false)
     private String title;
-
     @Column(nullable = false)
     private String body;
-
-    @Column(nullable = false)
-    private Data data;
-
-
-    public Blog(String title, String body, Data data) {
-        this.title = title;
-        this.body = body;
-        this.data = data;
-    }
 }
